@@ -21,7 +21,7 @@ use Laravel\Jetstream\Jetstream;
 */
 
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
+    return Inertia::render('Pages/Welcome', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
@@ -53,5 +53,5 @@ Route::group(['middleware' => config('jetstream.middleware', ['web'])], function
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return Inertia::render('Dashboard');
+    return Inertia::render('Pages/Dashboard');
 })->name('dashboard');
