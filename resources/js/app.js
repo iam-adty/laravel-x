@@ -8,10 +8,11 @@ import { InertiaProgress } from '@inertiajs/progress';
 const el = document.getElementById('app');
 
 createApp({
+    name: process.env.MIX_APP_NAME,
     render: () =>
         h(InertiaApp, {
             initialPage: JSON.parse(el.dataset.page),
-            resolveComponent: (name) => import(`./Pages/${name}`).then(module => module.default),
+            resolveComponent: (name) => import(`./${name}`).then(module => module.default),
         }),
 })
     .mixin({ methods: { route } })

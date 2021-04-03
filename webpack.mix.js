@@ -11,6 +11,13 @@ const mix = require('laravel-mix');
  |
  */
 
+if (!mix.inProduction()) {
+    mix.browserSync({
+        proxy: process.env.APP_URL,
+        open: false,
+    });
+}
+
 mix.js('resources/js/app.js', 'public/js').vue()
     .postCss('resources/css/app.css', 'public/css', [
         require('postcss-import'),

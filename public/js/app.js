@@ -16625,11 +16625,12 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // Import
 
 var el = document.getElementById('app');
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.createApp)({
+  name: "Laravel X",
   render: function render() {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.h)(_inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_1__.App, {
       initialPage: JSON.parse(el.dataset.page),
       resolveComponent: function resolveComponent(name) {
-        return __webpack_require__("./resources/js/Pages lazy recursive ^\\.\\/.*$")("./".concat(name)).then(function (module) {
+        return __webpack_require__("./resources/js lazy recursive ^\\.\\/.*$")("./".concat(name)).then(function (module) {
           return module["default"];
         });
       }
@@ -38717,212 +38718,558 @@ function compileToFunction(template, options) {
 
 /***/ }),
 
-/***/ "./resources/js/Pages lazy recursive ^\\.\\/.*$":
-/*!************************************************************!*\
-  !*** ./resources/js/Pages/ lazy ^\.\/.*$ namespace object ***!
-  \************************************************************/
+/***/ "./resources/js lazy recursive ^\\.\\/.*$":
+/*!******************************************************!*\
+  !*** ./resources/js/ lazy ^\.\/.*$ namespace object ***!
+  \******************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
-	"./API/ApiTokenManager": [
+	"./Jetstream/ActionMessage": [
+		"./resources/js/Jetstream/ActionMessage.vue",
+		9,
+		"resources_js_Jetstream_ActionMessage_vue"
+	],
+	"./Jetstream/ActionMessage.vue": [
+		"./resources/js/Jetstream/ActionMessage.vue",
+		9,
+		"resources_js_Jetstream_ActionMessage_vue"
+	],
+	"./Jetstream/ActionSection": [
+		"./resources/js/Jetstream/ActionSection.vue",
+		9,
+		"resources_js_Jetstream_ActionSection_vue"
+	],
+	"./Jetstream/ActionSection.vue": [
+		"./resources/js/Jetstream/ActionSection.vue",
+		9,
+		"resources_js_Jetstream_ActionSection_vue"
+	],
+	"./Jetstream/ApplicationLogo": [
+		"./resources/js/Jetstream/ApplicationLogo.vue",
+		9,
+		"resources_js_Jetstream_ApplicationLogo_vue"
+	],
+	"./Jetstream/ApplicationLogo.vue": [
+		"./resources/js/Jetstream/ApplicationLogo.vue",
+		9,
+		"resources_js_Jetstream_ApplicationLogo_vue"
+	],
+	"./Jetstream/ApplicationMark": [
+		"./resources/js/Jetstream/ApplicationMark.vue",
+		9,
+		"resources_js_Jetstream_ApplicationMark_vue"
+	],
+	"./Jetstream/ApplicationMark.vue": [
+		"./resources/js/Jetstream/ApplicationMark.vue",
+		9,
+		"resources_js_Jetstream_ApplicationMark_vue"
+	],
+	"./Jetstream/AuthenticationCard": [
+		"./resources/js/Jetstream/AuthenticationCard.vue",
+		9,
+		"resources_js_Jetstream_AuthenticationCard_vue"
+	],
+	"./Jetstream/AuthenticationCard.vue": [
+		"./resources/js/Jetstream/AuthenticationCard.vue",
+		9,
+		"resources_js_Jetstream_AuthenticationCard_vue"
+	],
+	"./Jetstream/AuthenticationCardLogo": [
+		"./resources/js/Jetstream/AuthenticationCardLogo.vue",
+		9,
+		"resources_js_Jetstream_AuthenticationCardLogo_vue"
+	],
+	"./Jetstream/AuthenticationCardLogo.vue": [
+		"./resources/js/Jetstream/AuthenticationCardLogo.vue",
+		9,
+		"resources_js_Jetstream_AuthenticationCardLogo_vue"
+	],
+	"./Jetstream/Banner": [
+		"./resources/js/Jetstream/Banner.vue",
+		9,
+		"resources_js_Jetstream_Banner_vue"
+	],
+	"./Jetstream/Banner.vue": [
+		"./resources/js/Jetstream/Banner.vue",
+		9,
+		"resources_js_Jetstream_Banner_vue"
+	],
+	"./Jetstream/Button": [
+		"./resources/js/Jetstream/Button.vue",
+		9,
+		"resources_js_Jetstream_Button_vue"
+	],
+	"./Jetstream/Button.vue": [
+		"./resources/js/Jetstream/Button.vue",
+		9,
+		"resources_js_Jetstream_Button_vue"
+	],
+	"./Jetstream/Checkbox": [
+		"./resources/js/Jetstream/Checkbox.vue",
+		9,
+		"resources_js_Jetstream_Checkbox_vue"
+	],
+	"./Jetstream/Checkbox.vue": [
+		"./resources/js/Jetstream/Checkbox.vue",
+		9,
+		"resources_js_Jetstream_Checkbox_vue"
+	],
+	"./Jetstream/ConfirmationModal": [
+		"./resources/js/Jetstream/ConfirmationModal.vue",
+		9,
+		"resources_js_Jetstream_ConfirmationModal_vue"
+	],
+	"./Jetstream/ConfirmationModal.vue": [
+		"./resources/js/Jetstream/ConfirmationModal.vue",
+		9,
+		"resources_js_Jetstream_ConfirmationModal_vue"
+	],
+	"./Jetstream/ConfirmsPassword": [
+		"./resources/js/Jetstream/ConfirmsPassword.vue",
+		9,
+		"resources_js_Jetstream_ConfirmsPassword_vue"
+	],
+	"./Jetstream/ConfirmsPassword.vue": [
+		"./resources/js/Jetstream/ConfirmsPassword.vue",
+		9,
+		"resources_js_Jetstream_ConfirmsPassword_vue"
+	],
+	"./Jetstream/DangerButton": [
+		"./resources/js/Jetstream/DangerButton.vue",
+		9,
+		"resources_js_Jetstream_DangerButton_vue"
+	],
+	"./Jetstream/DangerButton.vue": [
+		"./resources/js/Jetstream/DangerButton.vue",
+		9,
+		"resources_js_Jetstream_DangerButton_vue"
+	],
+	"./Jetstream/DialogModal": [
+		"./resources/js/Jetstream/DialogModal.vue",
+		9,
+		"resources_js_Jetstream_DialogModal_vue"
+	],
+	"./Jetstream/DialogModal.vue": [
+		"./resources/js/Jetstream/DialogModal.vue",
+		9,
+		"resources_js_Jetstream_DialogModal_vue"
+	],
+	"./Jetstream/Dropdown": [
+		"./resources/js/Jetstream/Dropdown.vue",
+		9,
+		"resources_js_Jetstream_Dropdown_vue"
+	],
+	"./Jetstream/Dropdown.vue": [
+		"./resources/js/Jetstream/Dropdown.vue",
+		9,
+		"resources_js_Jetstream_Dropdown_vue"
+	],
+	"./Jetstream/DropdownLink": [
+		"./resources/js/Jetstream/DropdownLink.vue",
+		9,
+		"resources_js_Jetstream_DropdownLink_vue"
+	],
+	"./Jetstream/DropdownLink.vue": [
+		"./resources/js/Jetstream/DropdownLink.vue",
+		9,
+		"resources_js_Jetstream_DropdownLink_vue"
+	],
+	"./Jetstream/FormSection": [
+		"./resources/js/Jetstream/FormSection.vue",
+		9,
+		"resources_js_Jetstream_FormSection_vue"
+	],
+	"./Jetstream/FormSection.vue": [
+		"./resources/js/Jetstream/FormSection.vue",
+		9,
+		"resources_js_Jetstream_FormSection_vue"
+	],
+	"./Jetstream/Input": [
+		"./resources/js/Jetstream/Input.vue",
+		9,
+		"resources_js_Jetstream_Input_vue"
+	],
+	"./Jetstream/Input.vue": [
+		"./resources/js/Jetstream/Input.vue",
+		9,
+		"resources_js_Jetstream_Input_vue"
+	],
+	"./Jetstream/InputError": [
+		"./resources/js/Jetstream/InputError.vue",
+		9,
+		"resources_js_Jetstream_InputError_vue"
+	],
+	"./Jetstream/InputError.vue": [
+		"./resources/js/Jetstream/InputError.vue",
+		9,
+		"resources_js_Jetstream_InputError_vue"
+	],
+	"./Jetstream/Label": [
+		"./resources/js/Jetstream/Label.vue",
+		9,
+		"resources_js_Jetstream_Label_vue"
+	],
+	"./Jetstream/Label.vue": [
+		"./resources/js/Jetstream/Label.vue",
+		9,
+		"resources_js_Jetstream_Label_vue"
+	],
+	"./Jetstream/Modal": [
+		"./resources/js/Jetstream/Modal.vue",
+		9,
+		"resources_js_Jetstream_Modal_vue"
+	],
+	"./Jetstream/Modal.vue": [
+		"./resources/js/Jetstream/Modal.vue",
+		9,
+		"resources_js_Jetstream_Modal_vue"
+	],
+	"./Jetstream/NavLink": [
+		"./resources/js/Jetstream/NavLink.vue",
+		9,
+		"resources_js_Jetstream_NavLink_vue"
+	],
+	"./Jetstream/NavLink.vue": [
+		"./resources/js/Jetstream/NavLink.vue",
+		9,
+		"resources_js_Jetstream_NavLink_vue"
+	],
+	"./Jetstream/ResponsiveNavLink": [
+		"./resources/js/Jetstream/ResponsiveNavLink.vue",
+		9,
+		"resources_js_Jetstream_ResponsiveNavLink_vue"
+	],
+	"./Jetstream/ResponsiveNavLink.vue": [
+		"./resources/js/Jetstream/ResponsiveNavLink.vue",
+		9,
+		"resources_js_Jetstream_ResponsiveNavLink_vue"
+	],
+	"./Jetstream/SecondaryButton": [
+		"./resources/js/Jetstream/SecondaryButton.vue",
+		9,
+		"resources_js_Jetstream_SecondaryButton_vue"
+	],
+	"./Jetstream/SecondaryButton.vue": [
+		"./resources/js/Jetstream/SecondaryButton.vue",
+		9,
+		"resources_js_Jetstream_SecondaryButton_vue"
+	],
+	"./Jetstream/SectionBorder": [
+		"./resources/js/Jetstream/SectionBorder.vue",
+		9,
+		"resources_js_Jetstream_SectionBorder_vue"
+	],
+	"./Jetstream/SectionBorder.vue": [
+		"./resources/js/Jetstream/SectionBorder.vue",
+		9,
+		"resources_js_Jetstream_SectionBorder_vue"
+	],
+	"./Jetstream/SectionTitle": [
+		"./resources/js/Jetstream/SectionTitle.vue",
+		9,
+		"resources_js_Jetstream_SectionTitle_vue"
+	],
+	"./Jetstream/SectionTitle.vue": [
+		"./resources/js/Jetstream/SectionTitle.vue",
+		9,
+		"resources_js_Jetstream_SectionTitle_vue"
+	],
+	"./Jetstream/ValidationErrors": [
+		"./resources/js/Jetstream/ValidationErrors.vue",
+		9,
+		"resources_js_Jetstream_ValidationErrors_vue"
+	],
+	"./Jetstream/ValidationErrors.vue": [
+		"./resources/js/Jetstream/ValidationErrors.vue",
+		9,
+		"resources_js_Jetstream_ValidationErrors_vue"
+	],
+	"./Jetstream/Welcome": [
+		"./resources/js/Jetstream/Welcome.vue",
+		9,
+		"resources_js_Jetstream_Welcome_vue"
+	],
+	"./Jetstream/Welcome.vue": [
+		"./resources/js/Jetstream/Welcome.vue",
+		9,
+		"resources_js_Jetstream_Welcome_vue"
+	],
+	"./Layouts/AppLayout": [
+		"./resources/js/Layouts/AppLayout.vue",
+		9,
+		"resources_js_Layouts_AppLayout_vue"
+	],
+	"./Layouts/AppLayout.vue": [
+		"./resources/js/Layouts/AppLayout.vue",
+		9,
+		"resources_js_Layouts_AppLayout_vue"
+	],
+	"./Pages/API/ApiTokenManager": [
 		"./resources/js/Pages/API/ApiTokenManager.vue",
+		9,
 		"resources_js_Pages_API_ApiTokenManager_vue"
 	],
-	"./API/ApiTokenManager.vue": [
+	"./Pages/API/ApiTokenManager.vue": [
 		"./resources/js/Pages/API/ApiTokenManager.vue",
+		9,
 		"resources_js_Pages_API_ApiTokenManager_vue"
 	],
-	"./API/Index": [
+	"./Pages/API/Index": [
 		"./resources/js/Pages/API/Index.vue",
+		9,
 		"resources_js_Pages_API_Index_vue"
 	],
-	"./API/Index.vue": [
+	"./Pages/API/Index.vue": [
 		"./resources/js/Pages/API/Index.vue",
+		9,
 		"resources_js_Pages_API_Index_vue"
 	],
-	"./Auth/ConfirmPassword": [
+	"./Pages/Auth/ConfirmPassword": [
 		"./resources/js/Pages/Auth/ConfirmPassword.vue",
+		9,
 		"resources_js_Pages_Auth_ConfirmPassword_vue"
 	],
-	"./Auth/ConfirmPassword.vue": [
+	"./Pages/Auth/ConfirmPassword.vue": [
 		"./resources/js/Pages/Auth/ConfirmPassword.vue",
+		9,
 		"resources_js_Pages_Auth_ConfirmPassword_vue"
 	],
-	"./Auth/ForgotPassword": [
+	"./Pages/Auth/ForgotPassword": [
 		"./resources/js/Pages/Auth/ForgotPassword.vue",
+		9,
 		"resources_js_Pages_Auth_ForgotPassword_vue"
 	],
-	"./Auth/ForgotPassword.vue": [
+	"./Pages/Auth/ForgotPassword.vue": [
 		"./resources/js/Pages/Auth/ForgotPassword.vue",
+		9,
 		"resources_js_Pages_Auth_ForgotPassword_vue"
 	],
-	"./Auth/Login": [
+	"./Pages/Auth/Login": [
 		"./resources/js/Pages/Auth/Login.vue",
+		9,
 		"resources_js_Pages_Auth_Login_vue"
 	],
-	"./Auth/Login.vue": [
+	"./Pages/Auth/Login.vue": [
 		"./resources/js/Pages/Auth/Login.vue",
+		9,
 		"resources_js_Pages_Auth_Login_vue"
 	],
-	"./Auth/Register": [
+	"./Pages/Auth/Register": [
 		"./resources/js/Pages/Auth/Register.vue",
+		9,
 		"resources_js_Pages_Auth_Register_vue"
 	],
-	"./Auth/Register.vue": [
+	"./Pages/Auth/Register.vue": [
 		"./resources/js/Pages/Auth/Register.vue",
+		9,
 		"resources_js_Pages_Auth_Register_vue"
 	],
-	"./Auth/ResetPassword": [
+	"./Pages/Auth/ResetPassword": [
 		"./resources/js/Pages/Auth/ResetPassword.vue",
+		9,
 		"resources_js_Pages_Auth_ResetPassword_vue"
 	],
-	"./Auth/ResetPassword.vue": [
+	"./Pages/Auth/ResetPassword.vue": [
 		"./resources/js/Pages/Auth/ResetPassword.vue",
+		9,
 		"resources_js_Pages_Auth_ResetPassword_vue"
 	],
-	"./Auth/TwoFactorChallenge": [
+	"./Pages/Auth/TwoFactorChallenge": [
 		"./resources/js/Pages/Auth/TwoFactorChallenge.vue",
+		9,
 		"resources_js_Pages_Auth_TwoFactorChallenge_vue"
 	],
-	"./Auth/TwoFactorChallenge.vue": [
+	"./Pages/Auth/TwoFactorChallenge.vue": [
 		"./resources/js/Pages/Auth/TwoFactorChallenge.vue",
+		9,
 		"resources_js_Pages_Auth_TwoFactorChallenge_vue"
 	],
-	"./Auth/VerifyEmail": [
+	"./Pages/Auth/VerifyEmail": [
 		"./resources/js/Pages/Auth/VerifyEmail.vue",
+		9,
 		"resources_js_Pages_Auth_VerifyEmail_vue"
 	],
-	"./Auth/VerifyEmail.vue": [
+	"./Pages/Auth/VerifyEmail.vue": [
 		"./resources/js/Pages/Auth/VerifyEmail.vue",
+		9,
 		"resources_js_Pages_Auth_VerifyEmail_vue"
 	],
-	"./Dashboard": [
+	"./Pages/Dashboard": [
 		"./resources/js/Pages/Dashboard.vue",
+		9,
 		"resources_js_Pages_Dashboard_vue"
 	],
-	"./Dashboard.vue": [
+	"./Pages/Dashboard.vue": [
 		"./resources/js/Pages/Dashboard.vue",
+		9,
 		"resources_js_Pages_Dashboard_vue"
 	],
-	"./PrivacyPolicy": [
+	"./Pages/PrivacyPolicy": [
 		"./resources/js/Pages/PrivacyPolicy.vue",
+		9,
 		"resources_js_Pages_PrivacyPolicy_vue"
 	],
-	"./PrivacyPolicy.vue": [
+	"./Pages/PrivacyPolicy.vue": [
 		"./resources/js/Pages/PrivacyPolicy.vue",
+		9,
 		"resources_js_Pages_PrivacyPolicy_vue"
 	],
-	"./Profile/DeleteUserForm": [
+	"./Pages/Profile/DeleteUserForm": [
 		"./resources/js/Pages/Profile/DeleteUserForm.vue",
+		9,
 		"resources_js_Pages_Profile_DeleteUserForm_vue"
 	],
-	"./Profile/DeleteUserForm.vue": [
+	"./Pages/Profile/DeleteUserForm.vue": [
 		"./resources/js/Pages/Profile/DeleteUserForm.vue",
+		9,
 		"resources_js_Pages_Profile_DeleteUserForm_vue"
 	],
-	"./Profile/LogoutOtherBrowserSessionsForm": [
+	"./Pages/Profile/LogoutOtherBrowserSessionsForm": [
 		"./resources/js/Pages/Profile/LogoutOtherBrowserSessionsForm.vue",
+		9,
 		"resources_js_Pages_Profile_LogoutOtherBrowserSessionsForm_vue"
 	],
-	"./Profile/LogoutOtherBrowserSessionsForm.vue": [
+	"./Pages/Profile/LogoutOtherBrowserSessionsForm.vue": [
 		"./resources/js/Pages/Profile/LogoutOtherBrowserSessionsForm.vue",
+		9,
 		"resources_js_Pages_Profile_LogoutOtherBrowserSessionsForm_vue"
 	],
-	"./Profile/Show": [
+	"./Pages/Profile/Show": [
 		"./resources/js/Pages/Profile/Show.vue",
+		9,
 		"resources_js_Pages_Profile_Show_vue"
 	],
-	"./Profile/Show.vue": [
+	"./Pages/Profile/Show.vue": [
 		"./resources/js/Pages/Profile/Show.vue",
+		9,
 		"resources_js_Pages_Profile_Show_vue"
 	],
-	"./Profile/TwoFactorAuthenticationForm": [
+	"./Pages/Profile/TwoFactorAuthenticationForm": [
 		"./resources/js/Pages/Profile/TwoFactorAuthenticationForm.vue",
+		9,
 		"resources_js_Pages_Profile_TwoFactorAuthenticationForm_vue"
 	],
-	"./Profile/TwoFactorAuthenticationForm.vue": [
+	"./Pages/Profile/TwoFactorAuthenticationForm.vue": [
 		"./resources/js/Pages/Profile/TwoFactorAuthenticationForm.vue",
+		9,
 		"resources_js_Pages_Profile_TwoFactorAuthenticationForm_vue"
 	],
-	"./Profile/UpdatePasswordForm": [
+	"./Pages/Profile/UpdatePasswordForm": [
 		"./resources/js/Pages/Profile/UpdatePasswordForm.vue",
+		9,
 		"resources_js_Pages_Profile_UpdatePasswordForm_vue"
 	],
-	"./Profile/UpdatePasswordForm.vue": [
+	"./Pages/Profile/UpdatePasswordForm.vue": [
 		"./resources/js/Pages/Profile/UpdatePasswordForm.vue",
+		9,
 		"resources_js_Pages_Profile_UpdatePasswordForm_vue"
 	],
-	"./Profile/UpdateProfileInformationForm": [
+	"./Pages/Profile/UpdateProfileInformationForm": [
 		"./resources/js/Pages/Profile/UpdateProfileInformationForm.vue",
+		9,
 		"resources_js_Pages_Profile_UpdateProfileInformationForm_vue"
 	],
-	"./Profile/UpdateProfileInformationForm.vue": [
+	"./Pages/Profile/UpdateProfileInformationForm.vue": [
 		"./resources/js/Pages/Profile/UpdateProfileInformationForm.vue",
+		9,
 		"resources_js_Pages_Profile_UpdateProfileInformationForm_vue"
 	],
-	"./Teams/Create": [
+	"./Pages/Teams/Create": [
 		"./resources/js/Pages/Teams/Create.vue",
+		9,
 		"resources_js_Pages_Teams_Create_vue"
 	],
-	"./Teams/Create.vue": [
+	"./Pages/Teams/Create.vue": [
 		"./resources/js/Pages/Teams/Create.vue",
+		9,
 		"resources_js_Pages_Teams_Create_vue"
 	],
-	"./Teams/CreateTeamForm": [
+	"./Pages/Teams/CreateTeamForm": [
 		"./resources/js/Pages/Teams/CreateTeamForm.vue",
+		9,
 		"resources_js_Pages_Teams_CreateTeamForm_vue"
 	],
-	"./Teams/CreateTeamForm.vue": [
+	"./Pages/Teams/CreateTeamForm.vue": [
 		"./resources/js/Pages/Teams/CreateTeamForm.vue",
+		9,
 		"resources_js_Pages_Teams_CreateTeamForm_vue"
 	],
-	"./Teams/DeleteTeamForm": [
+	"./Pages/Teams/DeleteTeamForm": [
 		"./resources/js/Pages/Teams/DeleteTeamForm.vue",
+		9,
 		"resources_js_Pages_Teams_DeleteTeamForm_vue"
 	],
-	"./Teams/DeleteTeamForm.vue": [
+	"./Pages/Teams/DeleteTeamForm.vue": [
 		"./resources/js/Pages/Teams/DeleteTeamForm.vue",
+		9,
 		"resources_js_Pages_Teams_DeleteTeamForm_vue"
 	],
-	"./Teams/Show": [
+	"./Pages/Teams/Show": [
 		"./resources/js/Pages/Teams/Show.vue",
+		9,
 		"resources_js_Pages_Teams_Show_vue"
 	],
-	"./Teams/Show.vue": [
+	"./Pages/Teams/Show.vue": [
 		"./resources/js/Pages/Teams/Show.vue",
+		9,
 		"resources_js_Pages_Teams_Show_vue"
 	],
-	"./Teams/TeamMemberManager": [
+	"./Pages/Teams/TeamMemberManager": [
 		"./resources/js/Pages/Teams/TeamMemberManager.vue",
+		9,
 		"resources_js_Pages_Teams_TeamMemberManager_vue"
 	],
-	"./Teams/TeamMemberManager.vue": [
+	"./Pages/Teams/TeamMemberManager.vue": [
 		"./resources/js/Pages/Teams/TeamMemberManager.vue",
+		9,
 		"resources_js_Pages_Teams_TeamMemberManager_vue"
 	],
-	"./Teams/UpdateTeamNameForm": [
+	"./Pages/Teams/UpdateTeamNameForm": [
 		"./resources/js/Pages/Teams/UpdateTeamNameForm.vue",
+		9,
 		"resources_js_Pages_Teams_UpdateTeamNameForm_vue"
 	],
-	"./Teams/UpdateTeamNameForm.vue": [
+	"./Pages/Teams/UpdateTeamNameForm.vue": [
 		"./resources/js/Pages/Teams/UpdateTeamNameForm.vue",
+		9,
 		"resources_js_Pages_Teams_UpdateTeamNameForm_vue"
 	],
-	"./TermsOfService": [
+	"./Pages/TermsOfService": [
 		"./resources/js/Pages/TermsOfService.vue",
+		9,
 		"resources_js_Pages_TermsOfService_vue"
 	],
-	"./TermsOfService.vue": [
+	"./Pages/TermsOfService.vue": [
 		"./resources/js/Pages/TermsOfService.vue",
+		9,
 		"resources_js_Pages_TermsOfService_vue"
 	],
-	"./Welcome": [
+	"./Pages/Welcome": [
 		"./resources/js/Pages/Welcome.vue",
+		9,
 		"resources_js_Pages_Welcome_vue"
 	],
-	"./Welcome.vue": [
+	"./Pages/Welcome.vue": [
 		"./resources/js/Pages/Welcome.vue",
+		9,
 		"resources_js_Pages_Welcome_vue"
+	],
+	"./app": [
+		"./resources/js/app.js",
+		9
+	],
+	"./app.js": [
+		"./resources/js/app.js",
+		9
+	],
+	"./bootstrap": [
+		"./resources/js/bootstrap.js",
+		7
+	],
+	"./bootstrap.js": [
+		"./resources/js/bootstrap.js",
+		7
 	]
 };
 function webpackAsyncContext(req) {
@@ -38935,12 +39282,12 @@ function webpackAsyncContext(req) {
 	}
 
 	var ids = map[req], id = ids[0];
-	return __webpack_require__.e(ids[1]).then(() => {
-		return __webpack_require__(id);
+	return Promise.all(ids.slice(2).map(__webpack_require__.e)).then(() => {
+		return __webpack_require__.t(id, ids[1] | 16)
 	});
 }
 webpackAsyncContext.keys = () => (Object.keys(map));
-webpackAsyncContext.id = "./resources/js/Pages lazy recursive ^\\.\\/.*$";
+webpackAsyncContext.id = "./resources/js lazy recursive ^\\.\\/.*$";
 module.exports = webpackAsyncContext;
 
 /***/ }),
@@ -39031,6 +39378,36 @@ module.exports = webpackAsyncContext;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/create fake namespace object */
+/******/ 	(() => {
+/******/ 		var getProto = Object.getPrototypeOf ? (obj) => (Object.getPrototypeOf(obj)) : (obj) => (obj.__proto__);
+/******/ 		var leafPrototypes;
+/******/ 		// create a fake namespace object
+/******/ 		// mode & 1: value is a module id, require it
+/******/ 		// mode & 2: merge all properties of value into the ns
+/******/ 		// mode & 4: return value when already ns object
+/******/ 		// mode & 16: return value when it's Promise-like
+/******/ 		// mode & 8|1: behave like require
+/******/ 		__webpack_require__.t = function(value, mode) {
+/******/ 			if(mode & 1) value = this(value);
+/******/ 			if(mode & 8) return value;
+/******/ 			if(typeof value === 'object' && value) {
+/******/ 				if((mode & 4) && value.__esModule) return value;
+/******/ 				if((mode & 16) && typeof value.then === 'function') return value;
+/******/ 			}
+/******/ 			var ns = Object.create(null);
+/******/ 			__webpack_require__.r(ns);
+/******/ 			var def = {};
+/******/ 			leafPrototypes = leafPrototypes || [null, getProto({}), getProto([]), getProto(getProto)];
+/******/ 			for(var current = mode & 2 && value; typeof current == 'object' && !~leafPrototypes.indexOf(current); current = getProto(current)) {
+/******/ 				Object.getOwnPropertyNames(current).forEach((key) => (def[key] = () => (value[key])));
+/******/ 			}
+/******/ 			def['default'] = () => (value);
+/******/ 			__webpack_require__.d(ns, def);
+/******/ 			return ns;
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -39060,8 +39437,62 @@ module.exports = webpackAsyncContext;
 /******/ 	(() => {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
+/******/ 			// return url for filenames not based on template
+/******/ 			if (chunkId === "resources_js_Jetstream_ActionMessage_vue") return "js/resources/Jetstream/ActionMessage.js?id=9304a46bdebcd104cd04";
+/******/ 			if (chunkId === "resources_js_Jetstream_ActionSection_vue") return "js/resources/Jetstream/ActionSection.js?id=8fde5b7b7df6986ba11d";
+/******/ 			if (chunkId === "resources_js_Jetstream_ApplicationLogo_vue") return "js/resources/Jetstream/ApplicationLogo.js?id=c252f1f3cb168c296580";
+/******/ 			if (chunkId === "resources_js_Jetstream_ApplicationMark_vue") return "js/resources/Jetstream/ApplicationMark.js?id=123403acf8ab640ba19e";
+/******/ 			if (chunkId === "resources_js_Jetstream_AuthenticationCard_vue") return "js/resources/Jetstream/AuthenticationCard.js?id=37269f85606b2869822e";
+/******/ 			if (chunkId === "resources_js_Jetstream_AuthenticationCardLogo_vue") return "js/resources/Jetstream/AuthenticationCardLogo.js?id=c1c10eeb26f5b36382a2";
+/******/ 			if (chunkId === "resources_js_Jetstream_Banner_vue") return "js/resources/Jetstream/Banner.js?id=f990c81d4d27e06d89f9";
+/******/ 			if (chunkId === "resources_js_Jetstream_Button_vue") return "js/resources/Jetstream/Button.js?id=e761814a64121645a3c1";
+/******/ 			if (chunkId === "resources_js_Jetstream_Checkbox_vue") return "js/resources/Jetstream/Checkbox.js?id=7896605871729f2f6e19";
+/******/ 			if (chunkId === "resources_js_Jetstream_ConfirmationModal_vue") return "js/resources/Jetstream/ConfirmationModal.js?id=d5e62deadd1b4b7b374c";
+/******/ 			if (chunkId === "resources_js_Jetstream_ConfirmsPassword_vue") return "js/resources/Jetstream/ConfirmsPassword.js?id=3b9df9fc0a2eea30cfcc";
+/******/ 			if (chunkId === "resources_js_Jetstream_DangerButton_vue") return "js/resources/Jetstream/DangerButton.js?id=284b4f51fb53a3aaca80";
+/******/ 			if (chunkId === "resources_js_Jetstream_DialogModal_vue") return "js/resources/Jetstream/DialogModal.js?id=f0651ff9902fa685745d";
+/******/ 			if (chunkId === "resources_js_Jetstream_Dropdown_vue") return "js/resources/Jetstream/Dropdown.js?id=ad3a264e2cd66052b4f8";
+/******/ 			if (chunkId === "resources_js_Jetstream_DropdownLink_vue") return "js/resources/Jetstream/DropdownLink.js?id=571b878e9c2224dea5e0";
+/******/ 			if (chunkId === "resources_js_Jetstream_FormSection_vue") return "js/resources/Jetstream/FormSection.js?id=b7f0bb40c312fa1904e8";
+/******/ 			if (chunkId === "resources_js_Jetstream_Input_vue") return "js/resources/Jetstream/Input.js?id=0dd6cc9135480b5512de";
+/******/ 			if (chunkId === "resources_js_Jetstream_InputError_vue") return "js/resources/Jetstream/InputError.js?id=d5573aec99da1187abd0";
+/******/ 			if (chunkId === "resources_js_Jetstream_Label_vue") return "js/resources/Jetstream/Label.js?id=110e23e19778fe1233d2";
+/******/ 			if (chunkId === "resources_js_Jetstream_Modal_vue") return "js/resources/Jetstream/Modal.js?id=e590050c4a15423d1a31";
+/******/ 			if (chunkId === "resources_js_Jetstream_NavLink_vue") return "js/resources/Jetstream/NavLink.js?id=ef7ae78f0bba0a85db2e";
+/******/ 			if (chunkId === "resources_js_Jetstream_ResponsiveNavLink_vue") return "js/resources/Jetstream/ResponsiveNavLink.js?id=8d4fd0b85052e550964b";
+/******/ 			if (chunkId === "resources_js_Jetstream_SecondaryButton_vue") return "js/resources/Jetstream/SecondaryButton.js?id=a4ff444a6fd05ca0476c";
+/******/ 			if (chunkId === "resources_js_Jetstream_SectionBorder_vue") return "js/resources/Jetstream/SectionBorder.js?id=425779ea741f10c4f437";
+/******/ 			if (chunkId === "resources_js_Jetstream_SectionTitle_vue") return "js/resources/Jetstream/SectionTitle.js?id=64780022a4d9de4d6815";
+/******/ 			if (chunkId === "resources_js_Jetstream_ValidationErrors_vue") return "js/resources/Jetstream/ValidationErrors.js?id=d665e6880002010b75ab";
+/******/ 			if (chunkId === "resources_js_Jetstream_Welcome_vue") return "js/resources/Jetstream/Welcome.js?id=24f48e5ceb94dce30de6";
+/******/ 			if (chunkId === "resources_js_Layouts_AppLayout_vue") return "js/resources/Layouts/AppLayout.js?id=c7afc7204e5e0064d659";
+/******/ 			if (chunkId === "resources_js_Pages_API_ApiTokenManager_vue") return "js/resources/Pages/API/ApiTokenManager.js?id=41410916778fa25b7450";
+/******/ 			if (chunkId === "resources_js_Pages_API_Index_vue") return "js/resources/Pages/API/Index.js?id=3597fb906f15675f2204";
+/******/ 			if (chunkId === "resources_js_Pages_Auth_ConfirmPassword_vue") return "js/resources/Pages/Auth/ConfirmPassword.js?id=876fe2f20345e1e0a3b3";
+/******/ 			if (chunkId === "resources_js_Pages_Auth_ForgotPassword_vue") return "js/resources/Pages/Auth/ForgotPassword.js?id=81ee445089cd6d64253a";
+/******/ 			if (chunkId === "resources_js_Pages_Auth_Login_vue") return "js/resources/Pages/Auth/Login.js?id=b65f902db9573d70fdfa";
+/******/ 			if (chunkId === "resources_js_Pages_Auth_Register_vue") return "js/resources/Pages/Auth/Register.js?id=28db95dbd057744a71c3";
+/******/ 			if (chunkId === "resources_js_Pages_Auth_ResetPassword_vue") return "js/resources/Pages/Auth/ResetPassword.js?id=3112435867b08d561b0f";
+/******/ 			if (chunkId === "resources_js_Pages_Auth_TwoFactorChallenge_vue") return "js/resources/Pages/Auth/TwoFactorChallenge.js?id=39680e6c84f2289ce464";
+/******/ 			if (chunkId === "resources_js_Pages_Auth_VerifyEmail_vue") return "js/resources/Pages/Auth/VerifyEmail.js?id=789118a013b0ab98b7e9";
+/******/ 			if (chunkId === "resources_js_Pages_Dashboard_vue") return "js/resources/Pages/Dashboard.js?id=910958aca1ffd1d57a37";
+/******/ 			if (chunkId === "resources_js_Pages_PrivacyPolicy_vue") return "js/resources/Pages/PrivacyPolicy.js?id=3537029cfa7c206b1ff5";
+/******/ 			if (chunkId === "resources_js_Pages_Profile_DeleteUserForm_vue") return "js/resources/Pages/Profile/DeleteUserForm.js?id=1d15c8701651d4cedf76";
+/******/ 			if (chunkId === "resources_js_Pages_Profile_LogoutOtherBrowserSessionsForm_vue") return "js/resources/Pages/Profile/LogoutOtherBrowserSessionsForm.js?id=5fcf8dfe832049eb4c70";
+/******/ 			if (chunkId === "resources_js_Pages_Profile_Show_vue") return "js/resources/Pages/Profile/Show.js?id=2d1e94983c90a23f2b5c";
+/******/ 			if (chunkId === "resources_js_Pages_Profile_TwoFactorAuthenticationForm_vue") return "js/resources/Pages/Profile/TwoFactorAuthenticationForm.js?id=50f93b732108fd0acdf7";
+/******/ 			if (chunkId === "resources_js_Pages_Profile_UpdatePasswordForm_vue") return "js/resources/Pages/Profile/UpdatePasswordForm.js?id=ad89e2c7c603f383322a";
+/******/ 			if (chunkId === "resources_js_Pages_Profile_UpdateProfileInformationForm_vue") return "js/resources/Pages/Profile/UpdateProfileInformationForm.js?id=5da3da15ca5d4e9885c1";
+/******/ 			if (chunkId === "resources_js_Pages_Teams_Create_vue") return "js/resources/Pages/Teams/Create.js?id=8dfff2775c0b137a5660";
+/******/ 			if (chunkId === "resources_js_Pages_Teams_CreateTeamForm_vue") return "js/resources/Pages/Teams/CreateTeamForm.js?id=3ac7da2f58833c9ab0c8";
+/******/ 			if (chunkId === "resources_js_Pages_Teams_DeleteTeamForm_vue") return "js/resources/Pages/Teams/DeleteTeamForm.js?id=981a46d1523320d03bc2";
+/******/ 			if (chunkId === "resources_js_Pages_Teams_Show_vue") return "js/resources/Pages/Teams/Show.js?id=3caeeb480edaae5f1f3e";
+/******/ 			if (chunkId === "resources_js_Pages_Teams_TeamMemberManager_vue") return "js/resources/Pages/Teams/TeamMemberManager.js?id=1a58356b31920116a4a7";
+/******/ 			if (chunkId === "resources_js_Pages_Teams_UpdateTeamNameForm_vue") return "js/resources/Pages/Teams/UpdateTeamNameForm.js?id=98fbe3ae5734c7de4fd6";
+/******/ 			if (chunkId === "resources_js_Pages_TermsOfService_vue") return "js/resources/Pages/TermsOfService.js?id=65a32490977056616bc3";
+/******/ 			if (chunkId === "resources_js_Pages_Welcome_vue") return "js/resources/Pages/Welcome.js?id=179ad6be180f3721683d";
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Pages_API_ApiTokenManager_vue":"41410916778fa25b7450","resources_js_Pages_API_Index_vue":"3597fb906f15675f2204","resources_js_Pages_Auth_ConfirmPassword_vue":"876fe2f20345e1e0a3b3","resources_js_Pages_Auth_ForgotPassword_vue":"81ee445089cd6d64253a","resources_js_Pages_Auth_Login_vue":"b65f902db9573d70fdfa","resources_js_Pages_Auth_Register_vue":"28db95dbd057744a71c3","resources_js_Pages_Auth_ResetPassword_vue":"3112435867b08d561b0f","resources_js_Pages_Auth_TwoFactorChallenge_vue":"39680e6c84f2289ce464","resources_js_Pages_Auth_VerifyEmail_vue":"789118a013b0ab98b7e9","resources_js_Pages_Dashboard_vue":"910958aca1ffd1d57a37","resources_js_Pages_PrivacyPolicy_vue":"3537029cfa7c206b1ff5","resources_js_Pages_Profile_DeleteUserForm_vue":"1d15c8701651d4cedf76","resources_js_Pages_Profile_LogoutOtherBrowserSessionsForm_vue":"5fcf8dfe832049eb4c70","resources_js_Pages_Profile_Show_vue":"2d1e94983c90a23f2b5c","resources_js_Pages_Profile_TwoFactorAuthenticationForm_vue":"50f93b732108fd0acdf7","resources_js_Pages_Profile_UpdatePasswordForm_vue":"ad89e2c7c603f383322a","resources_js_Pages_Profile_UpdateProfileInformationForm_vue":"5da3da15ca5d4e9885c1","resources_js_Pages_Teams_Create_vue":"8dfff2775c0b137a5660","resources_js_Pages_Teams_CreateTeamForm_vue":"3ac7da2f58833c9ab0c8","resources_js_Pages_Teams_DeleteTeamForm_vue":"981a46d1523320d03bc2","resources_js_Pages_Teams_Show_vue":"3caeeb480edaae5f1f3e","resources_js_Pages_Teams_TeamMemberManager_vue":"1a58356b31920116a4a7","resources_js_Pages_Teams_UpdateTeamNameForm_vue":"98fbe3ae5734c7de4fd6","resources_js_Pages_TermsOfService_vue":"65a32490977056616bc3","resources_js_Pages_Welcome_vue":"179ad6be180f3721683d"}[chunkId] + "";
+/******/ 			return undefined;
 /******/ 		};
 /******/ 	})();
 /******/ 	
