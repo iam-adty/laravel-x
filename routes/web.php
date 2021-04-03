@@ -1,11 +1,18 @@
 <?php
 
-use App\Http\Controllers\TeamController;
+use App\Http\Controllers\Jetstream\Inertia\ApiTokenController;
+use App\Http\Controllers\Jetstream\Inertia\CurrentUserController;
+use App\Http\Controllers\Jetstream\Inertia\OtherBrowserSessionsController;
+use App\Http\Controllers\Jetstream\Inertia\PrivacyPolicyController;
+use App\Http\Controllers\Jetstream\Inertia\ProfilePhotoController;
+use App\Http\Controllers\Jetstream\Inertia\TeamController;
+use App\Http\Controllers\Jetstream\Inertia\TeamMemberController;
+use App\Http\Controllers\Jetstream\Inertia\TermsOfServiceController;
+use App\Http\Controllers\Jetstream\Inertia\UserProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use Laravel\Jetstream\Http\Controllers\CurrentTeamController;
-use Laravel\Jetstream\Http\Controllers\Inertia\TeamMemberController;
 use Laravel\Jetstream\Http\Controllers\TeamInvitationController;
 use Laravel\Jetstream\Jetstream;
 
@@ -30,7 +37,36 @@ Route::get('/', function () {
 });
 
 Route::group(['middleware' => config('jetstream.middleware', ['web'])], function () {
+    if (Jetstream::hasTermsAndPrivacyPolicyFeature()) {
+        Route::get('/terms-of-service', [TermsOfServiceController::class, 'show'])->name('terms.show');
+        Route::get('/privacy-policy', [PrivacyPolicyController::class, 'show'])->name('policy.show');
+    }
+
     Route::group(['middleware' => ['auth', 'verified']], function () {
+        // User & Profile...
+        Route::get('/user/profile', [UserProfileController::class, 'show'])
+            ->name('profile.show');
+
+        Route::delete('/user/other-browser-sessions', [OtherBrowserSessionsController::class, 'destroy'])
+            ->name('other-browser-sessions.destroy');
+
+        Route::delete('/user/profile-photo', [ProfilePhotoController::class, 'destroy'])
+            ->name('current-user-photo.destroy');
+
+        if (Jetstream::hasAccountDeletionFeatures()) {
+            Route::delete('/user', [CurrentUserController::class, 'destroy'])
+                ->name('current-user.destroy');
+        }
+
+        // API...
+        if (Jetstream::hasApiFeatures()) {
+            Route::get('/user/api-tokens', [ApiTokenController::class, 'index'])->name('api-tokens.index');
+            Route::post('/user/api-tokens', [ApiTokenController::class, 'store'])->name('api-tokens.store');
+            Route::put('/user/api-tokens/{token}', [ApiTokenController::class, 'update'])->name('api-tokens.update');
+            Route::delete('/user/api-tokens/{token}', [ApiTokenController::class, 'destroy'])->name('api-tokens.destroy');
+        }
+
+        // Teams...
         if (Jetstream::hasTeamFeatures()) {
             Route::get('/teams/create', [TeamController::class, 'create'])->name('teams.create');
             Route::post('/teams', [TeamController::class, 'store'])->name('teams.store');
@@ -43,11 +79,11 @@ Route::group(['middleware' => config('jetstream.middleware', ['web'])], function
             Route::delete('/teams/{team}/members/{user}', [TeamMemberController::class, 'destroy'])->name('team-members.destroy');
 
             Route::get('/team-invitations/{invitation}', [TeamInvitationController::class, 'accept'])
-                        ->middleware(['signed'])
-                        ->name('team-invitations.accept');
+                ->middleware(['signed'])
+                ->name('team-invitations.accept');
 
             Route::delete('/team-invitations/{invitation}', [TeamInvitationController::class, 'destroy'])
-                        ->name('team-invitations.destroy');
+                ->name('team-invitations.destroy');
         }
     });
 });
