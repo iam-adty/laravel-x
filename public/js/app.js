@@ -39005,6 +39005,46 @@ var map = {
 		9,
 		"resources_js_Layouts_AppLayout_vue"
 	],
+	"./Layouts/Dashboard": [
+		"./resources/js/Layouts/Dashboard.vue",
+		9,
+		"resources_js_Layouts_Dashboard_vue"
+	],
+	"./Layouts/Dashboard.vue": [
+		"./resources/js/Layouts/Dashboard.vue",
+		9,
+		"resources_js_Layouts_Dashboard_vue"
+	],
+	"./Layouts/Dashboard/Menu": [
+		"./resources/js/Layouts/Dashboard/Menu.vue",
+		9,
+		"resources_js_Layouts_Dashboard_Menu_vue"
+	],
+	"./Layouts/Dashboard/Menu.vue": [
+		"./resources/js/Layouts/Dashboard/Menu.vue",
+		9,
+		"resources_js_Layouts_Dashboard_Menu_vue"
+	],
+	"./Layouts/Dashboard/Menu/Item": [
+		"./resources/js/Layouts/Dashboard/Menu/Item.vue",
+		9,
+		"resources_js_Layouts_Dashboard_Menu_Item_vue"
+	],
+	"./Layouts/Dashboard/Menu/Item.vue": [
+		"./resources/js/Layouts/Dashboard/Menu/Item.vue",
+		9,
+		"resources_js_Layouts_Dashboard_Menu_Item_vue"
+	],
+	"./Layouts/Dashboard/Setting": [
+		"./resources/js/Layouts/Dashboard/Setting.vue",
+		9,
+		"resources_js_Layouts_Dashboard_Setting_vue"
+	],
+	"./Layouts/Dashboard/Setting.vue": [
+		"./resources/js/Layouts/Dashboard/Setting.vue",
+		9,
+		"resources_js_Layouts_Dashboard_Setting_vue"
+	],
 	"./Pages/API/ApiTokenManager": [
 		"./resources/js/Pages/API/ApiTokenManager.vue",
 		9,
@@ -39104,6 +39144,66 @@ var map = {
 		"./resources/js/Pages/Dashboard.vue",
 		9,
 		"resources_js_Pages_Dashboard_vue"
+	],
+	"./Pages/Dashboard/Setting": [
+		"./resources/js/Pages/Dashboard/Setting.vue",
+		9,
+		"resources_js_Pages_Dashboard_Setting_vue"
+	],
+	"./Pages/Dashboard/Setting.vue": [
+		"./resources/js/Pages/Dashboard/Setting.vue",
+		9,
+		"resources_js_Pages_Dashboard_Setting_vue"
+	],
+	"./Pages/Dashboard/Setting/Permission": [
+		"./resources/js/Pages/Dashboard/Setting/Permission.vue",
+		9,
+		"resources_js_Pages_Dashboard_Setting_Permission_vue"
+	],
+	"./Pages/Dashboard/Setting/Permission.vue": [
+		"./resources/js/Pages/Dashboard/Setting/Permission.vue",
+		9,
+		"resources_js_Pages_Dashboard_Setting_Permission_vue"
+	],
+	"./Pages/Dashboard/Setting/Role": [
+		"./resources/js/Pages/Dashboard/Setting/Role.vue",
+		9,
+		"resources_js_Pages_Dashboard_Setting_Role_vue"
+	],
+	"./Pages/Dashboard/Setting/Role.vue": [
+		"./resources/js/Pages/Dashboard/Setting/Role.vue",
+		9,
+		"resources_js_Pages_Dashboard_Setting_Role_vue"
+	],
+	"./Pages/Dashboard/Setting/Site": [
+		"./resources/js/Pages/Dashboard/Setting/Site.vue",
+		9,
+		"resources_js_Pages_Dashboard_Setting_Site_vue"
+	],
+	"./Pages/Dashboard/Setting/Site.vue": [
+		"./resources/js/Pages/Dashboard/Setting/Site.vue",
+		9,
+		"resources_js_Pages_Dashboard_Setting_Site_vue"
+	],
+	"./Pages/Dashboard/Setting/Team": [
+		"./resources/js/Pages/Dashboard/Setting/Team.vue",
+		9,
+		"resources_js_Pages_Dashboard_Setting_Team_vue"
+	],
+	"./Pages/Dashboard/Setting/Team.vue": [
+		"./resources/js/Pages/Dashboard/Setting/Team.vue",
+		9,
+		"resources_js_Pages_Dashboard_Setting_Team_vue"
+	],
+	"./Pages/Dashboard/Setting/User": [
+		"./resources/js/Pages/Dashboard/Setting/User.vue",
+		9,
+		"resources_js_Pages_Dashboard_Setting_User_vue"
+	],
+	"./Pages/Dashboard/Setting/User.vue": [
+		"./resources/js/Pages/Dashboard/Setting/User.vue",
+		9,
+		"resources_js_Pages_Dashboard_Setting_User_vue"
 	],
 	"./Pages/PrivacyPolicy": [
 		"./resources/js/Pages/PrivacyPolicy.vue",
@@ -39466,6 +39566,10 @@ module.exports = webpackAsyncContext;
 /******/ 			if (chunkId === "resources_js_Jetstream_ValidationErrors_vue") return "js/resources/Jetstream/ValidationErrors.js?id=d665e6880002010b75ab";
 /******/ 			if (chunkId === "resources_js_Jetstream_Welcome_vue") return "js/resources/Jetstream/Welcome.js?id=24f48e5ceb94dce30de6";
 /******/ 			if (chunkId === "resources_js_Layouts_AppLayout_vue") return "js/resources/Layouts/AppLayout.js?id=c7afc7204e5e0064d659";
+/******/ 			if (chunkId === "resources_js_Layouts_Dashboard_vue") return "js/resources/Layouts/Dashboard.js?id=e8ed311d07fbea390132";
+/******/ 			if (chunkId === "resources_js_Layouts_Dashboard_Menu_vue") return "js/resources/Layouts/Dashboard/Menu.js?id=68003530143369b551f7";
+/******/ 			if (chunkId === "resources_js_Layouts_Dashboard_Menu_Item_vue") return "js/resources/Layouts/Dashboard/Menu/Item.js?id=1ed8156fb08b3a87a068";
+/******/ 			if (chunkId === "resources_js_Layouts_Dashboard_Setting_vue") return "js/resources/Layouts/Dashboard/Setting.js?id=c8059d3c1932883a27e7";
 /******/ 			if (chunkId === "resources_js_Pages_API_ApiTokenManager_vue") return "js/resources/Pages/API/ApiTokenManager.js?id=41410916778fa25b7450";
 /******/ 			if (chunkId === "resources_js_Pages_API_Index_vue") return "js/resources/Pages/API/Index.js?id=3597fb906f15675f2204";
 /******/ 			if (chunkId === "resources_js_Pages_Auth_ConfirmPassword_vue") return "js/resources/Pages/Auth/ConfirmPassword.js?id=876fe2f20345e1e0a3b3";
@@ -39475,7 +39579,13 @@ module.exports = webpackAsyncContext;
 /******/ 			if (chunkId === "resources_js_Pages_Auth_ResetPassword_vue") return "js/resources/Pages/Auth/ResetPassword.js?id=3112435867b08d561b0f";
 /******/ 			if (chunkId === "resources_js_Pages_Auth_TwoFactorChallenge_vue") return "js/resources/Pages/Auth/TwoFactorChallenge.js?id=39680e6c84f2289ce464";
 /******/ 			if (chunkId === "resources_js_Pages_Auth_VerifyEmail_vue") return "js/resources/Pages/Auth/VerifyEmail.js?id=789118a013b0ab98b7e9";
-/******/ 			if (chunkId === "resources_js_Pages_Dashboard_vue") return "js/resources/Pages/Dashboard.js?id=910958aca1ffd1d57a37";
+/******/ 			if (chunkId === "resources_js_Pages_Dashboard_vue") return "js/resources/Pages/Dashboard.js?id=50b7fb1622b6a9801d5f";
+/******/ 			if (chunkId === "resources_js_Pages_Dashboard_Setting_vue") return "js/resources/Pages/Dashboard/Setting.js?id=cef95bca6f2b18a4539a";
+/******/ 			if (chunkId === "resources_js_Pages_Dashboard_Setting_Permission_vue") return "js/resources/Pages/Dashboard/Setting/Permission.js?id=59b5bc840e693f303192";
+/******/ 			if (chunkId === "resources_js_Pages_Dashboard_Setting_Role_vue") return "js/resources/Pages/Dashboard/Setting/Role.js?id=82b150f55e15b8b5c576";
+/******/ 			if (chunkId === "resources_js_Pages_Dashboard_Setting_Site_vue") return "js/resources/Pages/Dashboard/Setting/Site.js?id=25c9610d212e634ab18d";
+/******/ 			if (chunkId === "resources_js_Pages_Dashboard_Setting_Team_vue") return "js/resources/Pages/Dashboard/Setting/Team.js?id=24631cccfca4551df010";
+/******/ 			if (chunkId === "resources_js_Pages_Dashboard_Setting_User_vue") return "js/resources/Pages/Dashboard/Setting/User.js?id=834cb3963faab48b322b";
 /******/ 			if (chunkId === "resources_js_Pages_PrivacyPolicy_vue") return "js/resources/Pages/PrivacyPolicy.js?id=3537029cfa7c206b1ff5";
 /******/ 			if (chunkId === "resources_js_Pages_Profile_DeleteUserForm_vue") return "js/resources/Pages/Profile/DeleteUserForm.js?id=1d15c8701651d4cedf76";
 /******/ 			if (chunkId === "resources_js_Pages_Profile_LogoutOtherBrowserSessionsForm_vue") return "js/resources/Pages/Profile/LogoutOtherBrowserSessionsForm.js?id=5fcf8dfe832049eb4c70";

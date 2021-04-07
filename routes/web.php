@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Controllers\Dashboard\Setting\Permission;
+use App\Http\Controllers\Dashboard\Setting\Role;
+use App\Http\Controllers\Dashboard\Setting\Site;
+use App\Http\Controllers\Dashboard\Setting\Team;
+use App\Http\Controllers\Dashboard\Setting\User;
 use App\Http\Controllers\Jetstream\Inertia\ApiTokenController;
 use App\Http\Controllers\Jetstream\Inertia\CurrentUserController;
 use App\Http\Controllers\Jetstream\Inertia\OtherBrowserSessionsController;
@@ -88,6 +93,27 @@ Route::group(['middleware' => config('jetstream.middleware', ['web'])], function
     });
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return Inertia::render('Pages/Dashboard');
-})->name('dashboard');
+Route::middleware([
+    'auth:sanctum',
+    'verified'
+])->name('dashboard.')->prefix('dashboard')->group(function () {
+    Route::get('/', function () {
+        return Inertia::render('Pages/Dashboard', [
+            'menu' => config('menu.dashboard')
+        ]);
+    });
+
+    Route::name('setting.')->prefix('setting')->group(function () {
+        Route::get('/', function () {
+            return Inertia::render('Pages/Dashboard/Setting', [
+                'menu' => config('menu.dashboard')
+            ]);
+        });
+
+        Route::resource('site', Site::class)->parameter('site', 'item');
+        Route::resource('user', User::class)->parameter('user', 'item');
+        Route::resource('team', Team::class)->parameter('team', 'item');
+        Route::resource('role', Role::class)->parameter('role', 'item');
+        Route::resource('permission', Permission::class)->parameter('permission', 'item');
+    });
+});

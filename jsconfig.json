@@ -1,7 +1,4 @@
 {
-    "include": [
-        "./resources/js/**/*"
-    ],
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
@@ -17,10 +14,6 @@
             "@/*": [
                 "resources/js/*"
             ]
-        },
-        "module": "es2015",
-        "moduleResolution": "node",
-        "target": "es5",
-        "sourceMap": true
+        }
     }
 }

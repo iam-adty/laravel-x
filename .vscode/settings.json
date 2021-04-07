@@ -4,5 +4,20 @@
         "javascriptreact",
         "vue",
     ],
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "php.suggest.basic": false,
+    "html.format.templating": true,
+    "intelephense.completion.fullyQualifyGlobalConstantsAndFunctions": false,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": false,
+    "emmet.includeLanguages": {
+        "blade.php": "html",
+        "vue": "html"
+    },
+    "[vue]": {
+        "editor.tabSize": 2
+    },
+    "[php]": {
+        "editor.tabSize": 4
+    }
 }
